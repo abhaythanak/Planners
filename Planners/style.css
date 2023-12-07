@@ -17,6 +17,23 @@ html,body {
 #main {
 
 }
+#cursor{
+    height: 7vw;
+    width: 7vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+
+#cursor h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
 
 #page1{
     height: 100vh;
@@ -34,7 +51,7 @@ html,body {
     height: 100%;
     width: 100%;
     position: relative;
-    z-index: 2;
+    z-index: 10;
     color: #fff;
     display: flex;
     align-items: center;
