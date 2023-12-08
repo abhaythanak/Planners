@@ -80,23 +80,17 @@ function swiperJs(){
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
         autoplay: {
             delay:2500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
         },
       });
 }
 swiperJs()
 
-let tl = gsap.timeline()
+
+function GsapEffect(){
+    let tl = gsap.timeline()
 
 tl.from("#loader h3",{
     x:40,
@@ -122,3 +116,5 @@ tl.from("#page1-content h1 span",{
     duration:1.2,
     stagger:0.2
 })
+}
+GsapEffect()
